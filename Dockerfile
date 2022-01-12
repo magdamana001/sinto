@@ -4,4 +4,4 @@ ENV DEBIAN_FRONTEND=noninteractive \
     DEBCONF_NONINTERACTIVE_SEEN=true
 
 RUN apt-get update
-RUN apt-get install wget
+RUN apt-get install wget -y
