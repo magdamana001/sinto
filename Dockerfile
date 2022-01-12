@@ -3,4 +3,4 @@ FROM ubuntu:20.04 as ubuntu-base
 ENV DEBIAN_FRONTEND=noninteractive \
     DEBCONF_NONINTERACTIVE_SEEN=true
 
-RUN sudo apt-get install wget
+RUN apt-get install wget
